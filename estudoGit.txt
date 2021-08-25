@@ -1,0 +1,53 @@
+Comandos Git
+
+
+(head é o local onde estamos, e master é o ramo)
+
+
+*o comando git init nós conseguimos criar um repositório Git;
+
+*Para analisar o estado do nosso repositório através do comando git status.
+
+*Passo importante adcionionar usuario e email para que possamos saber o autor de cada uma das alterações;
+
+git config --local(significa que as configurações so valerão para esse repositório) user.name "Seu nome aqui"
+git config --local user.email "seu@email.aqui"
+
+para ver as configurações use: git config user.nome (mostrará o nome do usuário)
+
+*Se no repositorio tiver algum arquivo que não queira que seja monitorado pelo git devemos fazer o uso do gitignore.
+a)criar um arquivo .gitignore com o nome do arquivo a ser ignorado (ex.: scritp).
+b)git add para adicionar o ignore no monitoramento
+c)depois fazer um commit do gitignore (informando o que está sendo ignorado) ex.: git commit -m "arquivo adicionado no ignore"; 
+
+*Como adicionar arquivos para serem commitados com git add;
+
+*Como commitar arquivos, utilizando o comando git commit: git commit -m "mensagem da alteracao"
+
+*Como verificar o histórico de commits, através do git log e algumas de suas opções:
+git log --oneline
+git log -p
+git log --pretty="parametros de formatação"
+
+*O repositorio --bare so contem as alteracao dos  arquivos, mas nao tem o repositorio em si, é usado como se fosse um servidor
+
+*git add remote (apelido para o servidor) (caminho)  
+ex.:git remote add meuServidor /home/cesar/teste
+git remote add origin https://github.com/czaradriano/estudo.git  (onde origin é o nome do servidor pode ser alterado para qualquer nome)
+
+
+*git remote -v (mostra as informações do nosso servidor)
+
+*Como criar um repositório Git sem uma cópia dos arquivos (com --bare) para ser utilizado como servidor;
+
+*Como adicionar links para os repositórios remotos, com o comando git remote add;
+
+*Como baixar um repositório pela primeira vez, clonando-o com o comando git clone;
+esse comando baixa os arquivos do servidor para nossa estação
+sua sintaxe: git clone caminhoDoservidor apelidoServidor
+
+*Para enviar as nossas alterações para um repositório remoto, com git push;
+sua sintaxe: git push nomeDoServidor branch (geralmente master)
+
+*trazer as informações do nosso repositório local com os dados no repositório remoto, utilizando git pull;
+git pull nomeDoServidor branch(geralmente master)

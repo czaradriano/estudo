@@ -1,0 +1,40 @@
+Comandos Linux!!
+
+
+*cp* copia arquivo ou renomeia (ex.: cp cesar.txt cesar.pdf, criou uma copia renomando);
+
+*mkdir* cria um diretório;
+
+*cd* troca de diretorio;
+
+*pwd* mostra o diretório atual;
+
+*rm* remove arquivo ou diretório (se o diretório estiver com algum arquivo precisamos usar o -r);
+
+*touch* cria um arquivo;
+
+*cat* mostra o que tem dentro de um arquivo; (usamos o grep para buscar o termo em um arquivo);
+
+*echo* insere dentro do arquivo (ex.: echo "ola mundo" > arquivotexto.txt, colocar >> para concatenar);
+
+*clear* limpa a tela do bash;
+
+*zip* compacta arquivo (ex.: zip -r novoArquivo arquivoParaCompactar);
+
+*tar* compacta arquivos (ex.: tar -czf nomeCompactado arquivoParaCompactar)
+para descompactar usamos o tar -xzf 'extract zip file' (ex.: tar -xzf arquivoParaDescompactar);
+
+*ls* lista o conteudo de um diretório (ex.: ls -la);
+
+*ps -e* lista os processos que estão rodando, 
+bom para ser usado com a | que direciona a saida para outro programa
+no caso o grep (que busca a palavra em arquivo) 
+(ex.: ps -e | grep firefox)
+
+*kill* para matar processo, o parametro -9 mata o processo na hora (e.: kill -9 idDoProcesso);
+
+*killall* mata todos os processo de um programa;
+
+*top* mostra os processo e o consumo de cpu e memoria;
+
+*sh* executa um scrip no bash (tbm pode ser substituido por ./
