@@ -37,4 +37,25 @@ no caso o grep (que busca a palavra em arquivo)
 
 *top* mostra os processo e o consumo de cpu e memoria;
 
-*sh* executa um scrip no bash (tbm pode ser substituido por ./
+*sh* executa um scrip no bash (tbm pode ser substituido por ./ desde que se tenha permissão)
+
+*su* essa comando troca o usuario logado (ex.: su nomeDoUsuario);
+
+*sudo adduser* adiciona um novo usuario no sitema;
+
+*passwd* altera a senha do usuario;
+
+*which* localiza um comando;
+
+*env* mostra o conteudo da variável PATH (onde o sistema acha o executável); 
+
+*chmod* para alterar as permissoes em um arquivo  (ex.: chmod o +r da permissoes a outros usuarios le algum arquivo);
+
+*sudo service mysql stat|stop* inicia ou para um servico; para sabermos onde estao localizados os servicos no
+que serão rodados na inicialização do ubuntu vamos a pasta /etc/init.d
+
+*para isntalarum codigo do zero preciso de tres comandos=  ./configure -->  make -->(dependencias) sudo make install
+
+*ssh* usado para acessar outra maquinha  (ssh nomedousuario@ipdamaquina)
+para usar o ssh em modografico ssh -x nomdedousuario@ipdamaquina
+
